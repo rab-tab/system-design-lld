@@ -1,7 +1,7 @@
 package HotelManagementSystem.actors;
 
 
-import HotelManagementSystem.Account;
+import HotelManagementSystem.account.Account;
 
 public abstract class Person {
     String name;

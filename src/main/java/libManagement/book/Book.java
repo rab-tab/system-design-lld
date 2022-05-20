@@ -1,4 +1,6 @@
-package libManagement;
+package libManagement.book;
+
+import libManagement.actors.Author;
 
 import java.util.List;
 
@@ -10,4 +12,5 @@ public class Book {
     private String language;
     private int numberOfPages;
     private List<Author> authors;
+    private BookCategory bookCategory;
 }

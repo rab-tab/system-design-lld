@@ -1,4 +1,6 @@
-package libManagement;
+package libManagement.book;
+
+import libManagement.Rack;
 
 import java.time.LocalDate;
 import java.util.Date;

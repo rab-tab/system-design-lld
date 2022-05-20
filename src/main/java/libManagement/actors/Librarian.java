@@ -1,8 +1,13 @@
-package libManagement;
+package libManagement.actors;
+
+import libManagement.Search;
+import libManagement.account.Account;
+import libManagement.book.BookItem;
 
 import java.lang.reflect.Member;
 
-public class Librarian extends Account{
+public class Librarian extends Account {
+    Search searchObj;
     public boolean addBookItem(BookItem bookItem) {
         return false;
     }

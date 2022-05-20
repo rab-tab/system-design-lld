@@ -1,9 +1,18 @@
-package libManagement;
+package libManagement.actors;
+
+import libManagement.Constants;
+import libManagement.Fine;
+import libManagement.ReservationStatus;
+import libManagement.account.Account;
+import libManagement.book.BookItem;
+import libManagement.book.BookLending;
+import libManagement.book.BookReservation;
+import libManagement.book.BookStatus;
 
 import java.time.LocalDate;
 import java.util.Date;
 
-public class Member extends Account{
+public class Member extends Account {
     private Date dateOfMembership;
     private int totalBooksCheckedout;
     private String MemberId;

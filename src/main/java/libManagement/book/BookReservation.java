@@ -1,4 +1,6 @@
-package libManagement;
+package libManagement.book;
+
+import libManagement.ReservationStatus;
 
 import java.util.Date;
 

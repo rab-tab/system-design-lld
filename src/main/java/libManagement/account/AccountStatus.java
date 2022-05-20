@@ -1,4 +1,4 @@
-package libManagement;
+package libManagement.account;
 
 public enum AccountStatus {
     ACTIVE,

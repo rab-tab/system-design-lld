@@ -1,4 +1,6 @@
-package libManagement;
+package libManagement.account;
+
+import libManagement.actors.Person;
 
 public abstract class Account {
     private String id;

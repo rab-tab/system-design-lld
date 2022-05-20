@@ -1,4 +1,4 @@
-package HotelManagementSystem;
+package HotelManagementSystem.account;
 
 public enum AccountStatus {
     ACTIVE,

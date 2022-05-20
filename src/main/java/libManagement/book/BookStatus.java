@@ -1,4 +1,4 @@
-package libManagement;
+package libManagement.book;
 
 public enum BookStatus {
     AVAILABLE,
