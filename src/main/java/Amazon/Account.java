@@ -1,6 +1,5 @@
 package Amazon;
 
-import parkingLot.AccountStatus;
 
 public class Account {
     String userName;

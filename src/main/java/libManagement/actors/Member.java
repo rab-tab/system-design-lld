@@ -1,8 +1,8 @@
 package libManagement.actors;
 
-import libManagement.Constants;
-import libManagement.Fine;
-import libManagement.ReservationStatus;
+import libManagement.book.Constants;
+import libManagement.book.Fine;
+import libManagement.book.ReservationStatus;
 import libManagement.account.Account;
 import libManagement.book.BookItem;
 import libManagement.book.BookLending;
