@@ -16,5 +16,14 @@ public class Test {
         System.out.println("Desc (desc modified ) :: " + marutiClassic.getModel());
         System.out.println("Model  (model modified) ::" + marutiClassic.getDescription());
         System.out.println("Maruti classic feature (new additin)  ::" + marutiClassic.classicFeature());
+
+
+        System.out.println("Maruti old model ---------------------------------");
+        Gold marutiGold = new MarutiGold(marutiClassic);
+        System.out.println("Desc (desc modified ) :: " + marutiGold.getModel());
+        System.out.println("Model  (model modified) ::" + marutiGold.getDescription());
+        System.out.println("Maruti classic feature (new additin)  ::" + marutiGold.goldFeature());
+
+
     }
 }

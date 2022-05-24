@@ -1,11 +1,11 @@
 package Decorator_CarProblem;
 
-public abstract class Classic implements ICar {
+public abstract class Gold implements ICar{
 
     ICar icar;
 
-    public Classic(ICar iCar) {
-        this.icar = iCar;
+    public Gold(ICar icar) {
+        this.icar = icar;
     }
 
     @Override
@@ -19,7 +19,5 @@ public abstract class Classic implements ICar {
         return icar.getDescription();
     }
 
-    public abstract String classicFeature();
-
-
+    public abstract String goldFeature();
 }
