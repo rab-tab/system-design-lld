@@ -1,6 +1,7 @@
 package BuildersPattern;
 
-import com.company.Product.House;
+
+import BuildersPattern.Product.House;
 
 public class TreeHouseBuilder implements HouseBuilder
 {
