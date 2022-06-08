@@ -1,4 +1,4 @@
-package ChainOfResponsibility;
+package ChainOfResponsibility.approach2;
 
 //https://www.youtube.com/watch?v=t43bl_AEA-0
 

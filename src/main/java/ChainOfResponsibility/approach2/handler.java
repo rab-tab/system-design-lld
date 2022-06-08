@@ -1,4 +1,4 @@
-package ChainOfResponsibility;
+package ChainOfResponsibility.approach2;
 
 import java.util.logging.Handler;
 

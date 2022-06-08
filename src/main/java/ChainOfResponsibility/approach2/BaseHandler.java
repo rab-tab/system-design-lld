@@ -1,6 +1,4 @@
-package ChainOfResponsibility;
-
-import java.util.logging.Handler;
+package ChainOfResponsibility.approach2;
 
 public abstract class BaseHandler implements handler {
     protected handler nextHandler;

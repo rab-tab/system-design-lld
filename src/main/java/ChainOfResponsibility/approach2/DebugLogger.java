@@ -1,7 +1,7 @@
-package ChainOfResponsibility;
+package ChainOfResponsibility.approach2;
 
-public class ErrorLogger extends Logger {
-    public ErrorLogger(int level) {
+public class DebugLogger extends Logger {
+    public DebugLogger(int level) {
         super(level);
     }
 

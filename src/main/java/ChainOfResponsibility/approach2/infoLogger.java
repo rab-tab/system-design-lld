@@ -1,4 +1,4 @@
-package ChainOfResponsibility;
+package ChainOfResponsibility.approach2;
 
 public class infoLogger extends Logger {
 
