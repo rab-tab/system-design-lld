@@ -14,7 +14,7 @@ public class Test {
         Logger debugLogger = new DebugLogger(Logger.DEBUG);
         infoLogger.setNextLogger(debugLogger);
 
-        Logger errorLogger = new test.ErrorLogger(Logger.ERROR);
+        Logger errorLogger = new ErrorLogger(Logger.ERROR);
         debugLogger.setNextLogger(errorLogger);
 
         return infoLogger;
