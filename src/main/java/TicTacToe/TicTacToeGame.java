@@ -9,8 +9,11 @@ public class TicTacToeGame {
     Deque<Player> players;
     Board gameBoard;
 
-    public void initializeGame(){
+    public TicTacToeGame() {
+        initializeGame();
+    }
 
+    public void initializeGame() {
         //creating 2 Players
         players = new LinkedList<>();
         PieceX crossPiece = new PieceX();
@@ -26,18 +29,18 @@ public class TicTacToeGame {
         gameBoard = new Board(3);
     }
 
-    public String startGame(){
+    public String startGame() {
 
         boolean noWinner = true;
-        while(noWinner){
+        while (noWinner) {
 
             //take out the player whose turn is and also put the player in the list back
             Player playerTurn = players.removeFirst();
 
             //get the free space from the board
             gameBoard.printBoard();
-            List<Pair<Integer, Integer>> freeSpaces =  gameBoard.getFreeCells();
-            if(freeSpaces.isEmpty()) {
+            List<Pair<Integer, Integer>> freeSpaces = gameBoard.getFreeCells();
+            if (freeSpaces.isEmpty()) {
                 noWinner = false;
                 continue;
             }
@@ -52,8 +55,8 @@ public class TicTacToeGame {
 
 
             //place the piece
-            boolean pieceAddedSuccessfully = gameBoard.addPiece(inputRow,inputColumn, playerTurn.piece);
-            if(!pieceAddedSuccessfully) {
+            boolean pieceAddedSuccessfully = gameBoard.addPiece(inputRow, inputColumn, playerTurn.piece);
+            if (!pieceAddedSuccessfully) {
                 //player can not insert the piece into this cell, player has to choose another cell
                 System.out.println("Incorredt possition chosen, try again");
                 players.addFirst(playerTurn);
@@ -62,7 +65,7 @@ public class TicTacToeGame {
             players.addLast(playerTurn);
 
             boolean winner = isThereWinner(inputRow, inputColumn, playerTurn.piece.pieceType);
-            if(winner) {
+            if (winner) {
                 return playerTurn.playerName;
             }
         }
@@ -78,30 +81,30 @@ public class TicTacToeGame {
         boolean antiDiagonalMatch = true;
 
         //need to check in row
-        for(int i=0;i<gameBoard.size;i++) {
+        for (int i = 0; i < gameBoard.size; i++) {
 
-            if(gameBoard.board[row][i] == null || gameBoard.board[row][i].pieceType != pieceType) {
+            if (gameBoard.board[row][i] == null || gameBoard.board[row][i].pieceType != pieceType) {
                 rowMatch = false;
             }
         }
 
         //need to check in column
-        for(int i=0;i<gameBoard.size;i++) {
+        for (int i = 0; i < gameBoard.size; i++) {
 
-            if(gameBoard.board[i][column] == null || gameBoard.board[i][column].pieceType != pieceType) {
+            if (gameBoard.board[i][column] == null || gameBoard.board[i][column].pieceType != pieceType) {
                 columnMatch = false;
             }
         }
 
         //need to check diagonals
-        for(int i=0, j=0; i<gameBoard.size;i++,j++) {
+        for (int i = 0, j = 0; i < gameBoard.size; i++, j++) {
             if (gameBoard.board[i][j] == null || gameBoard.board[i][j].pieceType != pieceType) {
                 diagonalMatch = false;
             }
         }
 
         //need to check anti-diagonals
-        for(int i=0, j=gameBoard.size-1; i<gameBoard.size;i++,j--) {
+        for (int i = 0, j = gameBoard.size - 1; i < gameBoard.size; i++, j--) {
             if (gameBoard.board[i][j] == null || gameBoard.board[i][j].pieceType != pieceType) {
                 antiDiagonalMatch = false;
             }
