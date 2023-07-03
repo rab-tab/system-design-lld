@@ -1,0 +1,40 @@
+package ElevatorLLD;
+
+import java.util.PriorityQueue;
+
+public class ElevatorController {
+    PriorityQueue<Integer> upMinPQ;
+    PriorityQueue<Integer> downMaxPQ;
+    Elevator elevator;
+
+    ElevatorController(Elevator elevator){
+
+        this.elevator = elevator;
+        upMinPQ = new PriorityQueue<>();
+        downMaxPQ = new PriorityQueue<>((a, b) -> b-a);
+
+    }
+    public void submitExternalRequest(int floor, Direction direction){
+
+        if(direction == Direction.DOWN) {
+            downMaxPQ.offer(floor);
+        } else {
+            upMinPQ.offer(floor);
+        }
+    }
+
+    public void submitInternalRequest(int floor){
+
+    }
+
+    public void controlElevator(){
+        while(true) {
+
+            if(elevator.elevatorDirection == Direction.UP){
+
+
+            }
+        }
+    }
+
+}
