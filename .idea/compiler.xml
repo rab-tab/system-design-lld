@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="low-level-design" />
         <module name="projects" />
+        <module name="system-design-lld" />
       </profile>
     </annotationProcessing>
   </component>

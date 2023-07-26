@@ -1,7 +1,5 @@
 package Amazon;
 
-import NotificationSystem.Notification;
-
 import java.util.Date;
 import java.util.List;
 
